@@ -92,7 +92,7 @@ def largest_number(seq_seq):
 def run_test_largest_negative_number():
     """ Tests the    largest_negative_number    function. """
     # -------------------------------------------------------------------------
-    # TODO: 4. Implement this TEST function.
+    # DONE: 4. Implement this TEST function.
     #   It TESTS the  largest_negative_number  function defined below.
     #
     #   Include enough tests to give you confidence that your solution
@@ -191,7 +191,7 @@ def run_test_first_is_elsewhere_too():
     answer = first_is_elsewhere_too([(3, 1, 4),
                                      (13, 10, 11, 7, 10),
                                      [11, 12, 3, 10]])
-    print('Expected and actual are:', expected, answer)
+    print('1Expected and actual are:', expected, answer)
     print(message[answer == expected])
     no_failures = no_failures and (answer == expected)
 
@@ -200,14 +200,14 @@ def run_test_first_is_elsewhere_too():
     answer = first_is_elsewhere_too([(3, 1, 4),
                                      (13, 10, 11, 7, 10),
                                      [11, 2, 13, 14]])
-    print('Expected and actual are:', expected, answer)
+    print('2Expected and actual are:', expected, answer)
     print(message[answer == expected])
     no_failures = no_failures and (answer == expected)
 
     # Test 3:
     expected = False
     answer = first_is_elsewhere_too([[], [1, 2], [1, 2]])
-    print('Expected and actual are:', expected, answer)
+    print('3Expected and actual are:', expected, answer)
     print(message[answer == expected])
     no_failures = no_failures and (answer == expected)
 
@@ -216,7 +216,7 @@ def run_test_first_is_elsewhere_too():
     answer = first_is_elsewhere_too([('a', 9),
                                      (13, 10, 11, 7, 'a'),
                                      [11, 12, 3, 10]])
-    print('Expected and actual are:', expected, answer)
+    print('4Expected and actual are:', expected, answer)
     print(message[answer == expected])  # Test 1:
     no_failures = no_failures and (answer == expected)
 
@@ -225,56 +225,56 @@ def run_test_first_is_elsewhere_too():
     answer = first_is_elsewhere_too([('a', 9),
                                      (13, 10, 11, 7, 'aa'),
                                      [11, 12, 3, 10]])
-    print('Expected and actual are:', expected, answer)
+    print('5Expected and actual are:', expected, answer)
     print(message[answer == expected])
     no_failures = no_failures and (answer == expected)
 
     # Test 6:
     expected = False
     answer = first_is_elsewhere_too([('a', 'a', 'b', 'b', 'a', 'b')])
-    print('Expected and actual are:', expected, answer)
+    print('6Expected and actual are:', expected, answer)
     print(message[answer == expected])
     no_failures = no_failures and (answer == expected)
 
     # Test 7:
     expected = False
     answer = first_is_elsewhere_too([()])
-    print('Expected and actual are:', expected, answer)
+    print('7Expected and actual are:', expected, answer)
     print(message[answer == expected])
     no_failures = no_failures and (answer == expected)
 
     # Test 8:
     expected = True
     answer = first_is_elsewhere_too([('a'), (), (), (), ('a')])
-    print('Expected and actual are:', expected, answer)
+    print('8Expected and actual are:', expected, answer)
     print(message[answer == expected])
     no_failures = no_failures and (answer == expected)
 
     # Test 9:
     expected = True
     answer = first_is_elsewhere_too([('a'), (), (), (), ('a'), ()])
-    print('Expected and actual are:', expected, answer)
+    print('9Expected and actual are:', expected, answer)
     print(message[answer == expected])
     no_failures = no_failures and (answer == expected)
 
     # Test 10:
     expected = False
     answer = first_is_elsewhere_too([('a'), (), (), (), ('b'), ()])
-    print('Expected and actual are:', expected, answer)
+    print('10Expected and actual are:', expected, answer)
     print(message[answer == expected])
     no_failures = no_failures and (answer == expected)
 
     # Test 11:
     expected = True
     answer = first_is_elsewhere_too(['hello', 'goodbye'])
-    print('Expected and actual are:', expected, answer)
+    print('11Expected and actual are:', expected, answer)
     print(message[answer == expected])
     no_failures = no_failures and (answer == expected)
 
     # Test 12:
     expected = False
     answer = first_is_elsewhere_too(['hello', 'xxxxxxxxxxx'])
-    print('Expected and actual are:', expected, answer)
+    print('12Expected and actual are:', expected, answer)
     print(message[answer == expected])
     no_failures = no_failures and (answer == expected)
 
@@ -287,7 +287,7 @@ def run_test_first_is_elsewhere_too():
                                      'get my sticks',
                                      'seven eight nine',
                                      'i am fine'])
-    print('Expected and actual are:', expected, answer)
+    print('13Expected and actual are:', expected, answer)
     print(message[answer == expected])
     no_failures = no_failures and (answer == expected)
 
@@ -296,7 +296,7 @@ def run_test_first_is_elsewhere_too():
     answer = first_is_elsewhere_too([(1000 * 'a') + 'b' + (500 * 'a'),
                                      (800 * 'c') + 'd' + 1200 * 'c',
                                      'b'])
-    print('Expected and actual are:', expected, answer)
+    print('14Expected and actual are:', expected, answer)
     print(message[answer == expected])
     no_failures = no_failures and (answer == expected)
 
@@ -306,7 +306,7 @@ def run_test_first_is_elsewhere_too():
                                      (800 * 'c') + 'd' + 1200 * 'c',
                                      (700 * 'eee') + 'b' + (90 * 'd'),
                                      (800 * 'c') + 'd' + 1200 * 'c'])
-    print('Expected and actual are:', expected, answer)
+    print('15Expected and actual are:', expected, answer)
     print(message[answer == expected])
     no_failures = no_failures and (answer == expected)
 
@@ -315,7 +315,7 @@ def run_test_first_is_elsewhere_too():
     answer = first_is_elsewhere_too([(1000 * 'b') + 'acd' + (500 * 'f'),
                                      (800 * '1') + '234a',
                                      'eeee'])
-    print('Expected and actual are:', expected, answer)
+    print('16Expected and actual are:', expected, answer)
     print(message[answer == expected])
     no_failures = no_failures and (answer == expected)
 
@@ -324,7 +324,7 @@ def run_test_first_is_elsewhere_too():
     answer = first_is_elsewhere_too([(1000 * 'b') + 'acd' + (500 * 'f'),
                                      'a' + (800 * '1') + '234',
                                      '123'])
-    print('Expected and actual are:', expected, answer)
+    print('17Expected and actual are:', expected, answer)
     print(message[answer == expected])
     no_failures = no_failures and (answer == expected)
 
@@ -340,14 +340,14 @@ def run_test_first_is_elsewhere_too():
 
     expected = True
     answer = first_is_elsewhere_too(test1 + ['a'] + test2)
-    print('Expected and actual are:', expected, answer)
+    print('18Expected and actual are:', expected, answer)
     print(message[answer == expected])
     no_failures = no_failures and (answer == expected)
 
     # Test 19 (continues test 18):
     expected = False
     answer = first_is_elsewhere_too(test1 + test2)
-    print('Expected and actual are:', expected, answer)
+    print('19Expected and actual are:', expected, answer)
     print(message[answer == expected])
     no_failures = no_failures and (answer == expected)
 
@@ -355,7 +355,7 @@ def run_test_first_is_elsewhere_too():
     expected = True
     a_inside = (100 * 'b') + 'a' + (100 * 'b')
     answer = first_is_elsewhere_too(test1 + [a_inside] + test2)
-    print('Expected and actual are:', expected, answer)
+    print('20Expected and actual are:', expected, answer)
     print(message[answer == expected])
     no_failures = no_failures and (answer == expected)
 
@@ -414,7 +414,13 @@ def first_is_elsewhere_too(seq_seq):
     #   in this problem, as doing so would defeat the goal of providing
     #   practice at loops within loops (within loops within ...)
     # -------------------------------------------------------------------------
-
+    for j in range(len(seq_seq[0])):
+        number = seq_seq[0][j]
+        for k in range(1, len(seq_seq) - 1):
+            for a in range(len(seq_seq[k])):
+                if number == seq_seq[k][a]:
+                    return True
+    return False
 
 # -----------------------------------------------------------------------------
 # Calls  main  to start the ball rolling.
